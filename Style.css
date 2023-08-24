@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: Nunito Sans;
+    color: #FFFFFF;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BG{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #161422;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.calcBody{
+    display: flex;
+    flex-direction:column;
+    width: 300px;
+    height: 500px;
+    padding:20px;
+    background-color: #2f2f2f;
+    border-radius: 20px;
+}
+
+.screen{
+    width: 100%;
+    height: 120px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.keycontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+    height:max-content;
+    justify-content: space-around;
+}
+
+.buttonKey{
+    border-radius: 10px;
+    color: #161422;
+    font-size: 35px;
+    width: 70px;
+    height: 70px;
+}
+
+#equal{
+    width:143px ;
+}
