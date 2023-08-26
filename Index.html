@@ -10,28 +10,42 @@
     <div class="BG"></div>
     <div class="mainContainer">
         <div class="calcBody">
-            <div class="screen"></div>
+            <form>
+                <div class="display">
+                    <input class="screen" type="text" name="display">
+                </div>
             <div class="keycontainer">
-                    <button class="buttonKey"id= "AC">AC</button>
-                    <button class="buttonKey"id= "DE">DE</button>
-                    <button class="buttonKey"id= "dot">.</button>
-                    <button class="buttonKey"id= "division">/</button>
-                <button class="buttonKey"id= "7">7</button>
-                <button class="buttonKey"id= "8">8</button>
-                <button class="buttonKey"id= "9">9</button>
-                    <button class="buttonKey"id= "multiplication">*</button>
-                <button class="buttonKey"id= "4">4</button>
-                <button class="buttonKey"id= "5">5</button>
-                <button class="buttonKey"id= "6">6</button>
-                    <button class="buttonKey"id= "substraction">-</button>
-                <button class="buttonKey"id= "1">1</button>
-                <button class="buttonKey"id= "2">2</button>
-                <button class="buttonKey"id= "3">3</button>
-                    <button class="buttonKey"id= "adition">+</button>
-                <button class="buttonKey"id= "double0">00</button>
-                <button class="buttonKey"id= "0">0</button>
-                    <button class="buttonKey"id= "equal">=</button>
+                <div class="keycolumns">
+                    <input class="key" type="button" value="AC" id="special" onclick="display.value = '' ">
+                    <input class="key" type="button" value="DE" id="special" onclick="display.value = display.value.toString().slice(0,-1)">
+                    <input class="key" type="button" value="." id="special" onclick="display.value += '.' ">
+                    <input class="key" type="button" value="/" id="special" onclick="display.value += '/' ">
+                </div>
+                <div class="keycolumns">
+                    <input class="key" type="button" value="7" onclick="display.value += '7' ">
+                    <input class="key" type="button" value="8" onclick="display.value += '8' ">
+                    <input class="key" type="button" value="9" onclick="display.value += '9' ">
+                    <input class="key" type="button" value="*" id="special" onclick="display.value += '*' ">
+                </div>
+                <div class="keycolumns">
+                    <input class="key" type="button" value="4" onclick="display.value += '4' ">
+                    <input class="key" type="button" value="5" onclick="display.value += '5' ">
+                    <input class="key" type="button" value="6" onclick="display.value += '6' ">
+                    <input class="key" type="button" value="-" id="special" onclick="display.value += '-' ">
+                </div>
+                <div class="keycolumns">
+                    <input class="key" type="button" value="1" onclick="display.value += '1' ">
+                    <input class="key" type="button" value="2" onclick="display.value += '2' ">
+                    <input class="key" type="button" value="3" onclick="display.value += '3' ">
+                    <input class="key" type="button" value="+" id="special" onclick="display.value += '+' ">
+                </div>
+                <div class="keycolumns">
+                    <input class="key" type="button" value="00" onclick="display.value += '00' ">
+                    <input class="key" type="button" value="0" onclick="display.value += '0' ">
+                    <input class="key" type="button" value="=" id="equal" onclick="display.value = eval(display.value)">
+                </div>
             </div>
+            </form>
         </div>
     </div>
 </body>

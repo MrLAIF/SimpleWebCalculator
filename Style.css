@@ -19,7 +19,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #161422;
+    background-color: #141227;
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
@@ -39,38 +39,53 @@ body, html {
     width: 300px;
     height: 500px;
     padding:20px;
-    background-color: #2f2f2f;
-    border-radius: 20px;
+    background-color: #615c89;
+    border-radius: 10px;
+    border: none;
 }
 
 .screen{
     width: 100%;
-    height: 120px;
+    height: 100px;
+    color: #161422;
+    font-size: 60px;
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-bottom: 5px;
+    border: none;
+    text-align: right;
 }
 
 .keycontainer{
     display: flex;
-    flex-wrap: wrap;
-    width: 98%;
-    height:max-content;
+    flex-direction: column;
+    width: 100%;
+    height: 380px;
     justify-content: space-around;
 }
 
-.buttonKey{
+.keycolumns{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.key{
+    color: #fff;
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
     border-radius: 10px;
-    color: #161422;
-    font-size: 35px;
-    width: 65px;
-    height: 65px;
-    margin:3px;
+    border: none;
+    background-color: transparent;
+    box-shadow: -3px -3px 5px rgba(0,0,0,0.4), 3px 3px 5px rgba(255,255,255,0.4);
 }
 
 #equal{
-    width:137px ;
+    width:146px;
+    color: #0d0a17
 }
-#AC, #DE, #dot, #division, #multiplication, #substraction, #adition, #equal{
-    color: rgb(67, 73, 185);
-}   
+
+#special{
+    color: #0d0a17;
+}
