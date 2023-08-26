@@ -48,6 +48,7 @@ body, html {
     height: 120px;
     background-color: #FFFFFF;
     border-radius: 10px;
+    margin-bottom: 5px;
 }
 
 .keycontainer{
@@ -62,10 +63,14 @@ body, html {
     border-radius: 10px;
     color: #161422;
     font-size: 35px;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
+    margin:3px;
 }
 
 #equal{
-    width:143px ;
+    width:137px ;
 }
+#AC, #DE, #dot, #division, #multiplication, #substraction, #adition, #equal{
+    color: rgb(67, 73, 185);
+}   
