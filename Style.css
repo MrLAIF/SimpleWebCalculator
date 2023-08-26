@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Open+Sans:wght@700&family=Roboto:wght@300&display=swap');
 
 *{
     font-family: Nunito Sans;
@@ -19,7 +19,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #141227;
+    background-color: #0d1118;
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
@@ -36,31 +36,48 @@ body, html {
 .calcBody{
     display: flex;
     flex-direction:column;
-    width: 300px;
-    height: 500px;
+    width: 350px;
+    height: 470px;
     padding:20px;
-    background-color: #615c89;
+    background-color: #131925;
     border-radius: 10px;
     border: none;
+
+    animation: slideInLeft 0.5s ease-in-out 0.3s 1 normal both;
+}
+@keyframes slideInLeft{
+    0%{
+        transform: translateX(-300px);
+
+        opacity: 0;
+        filter: blur(5px);
+    }
+
+    100%{
+        transform: translateX(0);
+
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 
+.display{
+    height: 20%;
+}
 .screen{
     width: 100%;
-    height: 100px;
-    color: #161422;
+    height: 100%;
+    color: #fff;
     font-size: 60px;
-    background-color: #FFFFFF;
+    background-color: transparent;
     border-radius: 10px;
-    margin-bottom: 5px;
     border: none;
     text-align: right;
 }
 
 .keycontainer{
+    margin-top: 10px;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 380px;
     justify-content: space-around;
 }
 
@@ -72,20 +89,34 @@ body, html {
 
 .key{
     color: #fff;
-    font-size: 30px;
-    height: 70px;
-    width: 70px;
+    font-size: 34px;
+    width: 87.5px;
     border-radius: 10px;
     border: none;
     background-color: transparent;
-    box-shadow: -3px -3px 5px rgba(0,0,0,0.4), 3px 3px 5px rgba(255,255,255,0.4);
 }
 
-#equal{
-    width:146px;
-    color: #0d0a17
+.numkeys{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#numkey{
+    height: 90px;
+    width: 90px;
+}
+.specialkeys{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #d81e5b;
 }
 
 #special{
-    color: #0d0a17;
+    font-size: 35px;
+    color: #fff;
+    height: 72px;
+    font-weight: bolder;
 }
